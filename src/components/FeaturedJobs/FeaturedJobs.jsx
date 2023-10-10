@@ -15,7 +15,7 @@ const FeaturedJobs = () => {
   return (
     <div>
       <div className="text-center">
-        <h2 className="text-5xl p-14 mb-5">Community and Cultural Events: {jobs.length}</h2>
+        <h2 className="text-5xl p-14 mb-5">Community and Cultural Events</h2>
       </div>
       <div className="grid grid-cols-2 gap-6">
         {jobs.slice(0, dataLength).map((job) => (

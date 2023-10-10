@@ -24,14 +24,16 @@ const CategoryList = () => {
   return (
     <div>
       <h1 className="category-main-title">Cultural Events</h1>
-      <div className="category-container">
+      <p className="my-5">Cultural events encompass a wide range of activities that celebrate and showcase various aspects of a culture or community. These events play a significant role in preserving traditions, promoting cultural exchange, and fostering a sense of identity and belonging.</p>
+      <img src="https://i.ibb.co/CVvwjT3/theme2.jpg" alt="" />
+      {/* <div className="category-container">
         {categories.map((cat) => (
           <div className="category" key={cat.category_id}>
             <h1 className="category-title">{cat.name}</h1>
             <p>{cat.description}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
