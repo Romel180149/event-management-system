@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/3NCxj11/cul.jpg",
+    "title": "Festival",
+    "date": "2023-01-15",
+    "location": "Location A",
+    "price": 10.99,
+    "description": "Immerse yourself in a world of excitement and joy at our vibrant festival. Get ready for a day packed with thrilling entertainment and activities suitable for all ages. Don't miss this unforgettable experience!"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/Xsd9XYq/parade.jpg",
+    "title": "Parades ",
+    "date": "2023-02-20",
+    "location": "Location B",
+    "price": 15.99,
+    "description": "Step into a world of wonder as our dazzling parades come to life with mesmerizing live performances, mouthwatering culinary delights, and so much more. Prepare to be enchanted!"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/3v2gddy/carnival.jpg",
+    "title": "Carnivals and Fairs",
+    "date": "2023-03-10",
+    "location": "Location C",
+    "price": 5.99,
+    "description": "Embark on a memorable evening brimming with the harmonious blend of music, artistry, and boundless creativity. Secure your tickets now for an enchanting experience!"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/SwxpcvC/celebration.jpg",
+    "title": "Cultural Celebrations",
+    "date": "2023-04-05",
+    "location": "Location D",
+    "price": 20.99,
+    "description": "Prepare for an unforgettable night of cultural festivities that promise entertainment and joy beyond compare. Reserve your spot now to partake in this extraordinary celebration!"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/WHTfgVn/char.jpg",
+    "title": "Fundraisers and Charity Galas",
+    "date": "2023-05-20",
+    "location": "Location E",
+    "price": 12.99,
+    "description": "Seize the opportunity to be part of an extraordinary event with a noble cause. Secure your tickets and be part of something truly amazing!"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/RT4psD6/cultural-music.jpg",
+    "title": "Cultural Music",
+    "date": "2023-06-15",
+    "location": "Location F",
+    "price": 8.99,
+    "description": "Experience a night of elegance and sophistication at our exclusive cultural music event. Ensure you have your passes to this exquisite evening of musical enchantment!"
+  }
+]
