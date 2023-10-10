@@ -1,16 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../../Hook/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
-import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
+  
   const location = useLocation();
   const navigate = useNavigate();
   const prevLocation = useLocation();
@@ -20,29 +21,33 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleSignIn().then((result) => console.log(result.user));
   };
+
   const handleLogin = () => {
-    if ((email, password)) {
-      signIn(email, password)
-        .then((result) => {
-          console.log(prevLocation);
-          console.log(location);
-          console.log(navigate);
-          navigate(from, { replace: true });
-          console.log(result.user);
-        })
-        .catch((err) => {
-          console.log(err.message);
-          setError(err);
-        });
-    } else {
-      setError("email or password can not be empty ");
+    if (!email || !password) {
+      setError("Email and password can not be empty");
+      return;
     }
+
+    signIn(email, password)
+      .then((result) => {
+        console.log(prevLocation);
+        console.log(location);
+        console.log(navigate);
+        navigate(from, { replace: true });
+        console.log(result.user);
+        toast.success("Login successful!"); // Show a success toast
+      })
+      .catch((err) => {
+        console.log(err.message);
+        setError("Email or password is incorrect"); // Set error message for email/password mismatch
+      });
   };
+
   return (
     <div>
       <div className="login-container">
         <div>
-          <p>{error}</p>
+          {error && <p className="error">{error}</p>}
           <input
             onChange={(e) => setEmail(e.target.value)}
             className="form-control"
@@ -71,6 +76,7 @@ const Login = () => {
           />
         </div>
       </div>
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   );
 };

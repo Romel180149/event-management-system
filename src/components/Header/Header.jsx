@@ -15,10 +15,10 @@ const Header = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/jobs">Jobs</NavLink>
+        <NavLink to="/jobs">Events</NavLink>
       </li>
       <li>
-        <NavLink to="/applied">Applied Jobs</NavLink>
+        <NavLink to="/applied">Visited Events</NavLink>
       </li>
       <li>
         <NavLink to="/login">Login</NavLink>
@@ -56,7 +56,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Career Hub</a>
+        {/* <a className="btn btn-ghost normal-case text-xl">Career Hub</a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -68,7 +68,7 @@ const Header = () => {
           </button>
         )}
         <p>{user?.email}</p>
-        <a className="btn">Apply Now</a>
+        {/* <a className="btn">Apply Now</a> */}
       </div>
     </div>
   );

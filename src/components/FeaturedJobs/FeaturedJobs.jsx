@@ -27,7 +27,7 @@ const FeaturedJobs = () => {
           onClick={() => setDataLength(jobs.length)}
           className="btn btn-primary"
         >
-          Show All Jobs
+          Show All Events
         </button>
       </div>
     </div>
